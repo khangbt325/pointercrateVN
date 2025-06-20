@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonlist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #1e1e1e, #3a3a3a);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #ffcc00;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .demon-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .demon-item {
+            background: rgba(30, 30, 30, 0.8); /* Màu nền mờ */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s, background 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .demon-item:hover {
+            transform: scale(1.02);
+            background: rgba(42, 42, 42, 0.9); /* Màu nền mờ khi hover */
+        }
+        .demon-rank {
+            font-size: 1.5em;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .demon-name {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+        .demon-name a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .demon-name a:hover {
+            color: #ff9900;
+        }
+        .demon-creator {
+            color: #cccccc;
+            font-style: italic;
+        }
+        .demon-video {
+            color: #00ccff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .demon-video:hover {
+            color: #0099cc;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #cccccc;
+            padding: 20px 0;
+            background: #1e1e1e;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .hero {
+            background: url('https://example.com/your-hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Geometry Dash Demonlist</h1>
+    </header>
+
+    <div class="hero">
+        <h2>Chào Mừng Đến Với Demonlist</h2>
+    </div>
+
+    <ul class="demon-list">
+        <li class="demon-item" style="background-image: url('https://example.com/image1.jpg');">
+            <span class="demon-rank">#1</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/1">Amethyst</a></span>
+            <span class="demon-creator">by iMist</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbA" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image2.jpg');">
+            <span class="demon-rank">#2</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/2">Tidal Wave</a></span>
+            <span class="demon-creator">by OniLink</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbB" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image3.jpg');">
+            <span class="demon-rank">#3</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/3">Nullscapes</a></span>
+            <span class="demon-creator">by Kiba</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbC" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image4.jpg');">
+            <span class="demon-rank">#4</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/4">BOOBAWAMBA</a></span>
+            <span class="demon-creator">by Akunakunn</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbD" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image5.jpg');">
+            <span class="demon-rank">#5</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/5">Every End</a></span>
+            <span class="demon-creator">by MindCap</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbE" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image6.jpg');">
+            <span class="demon-rank">#6</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/6">andromeda</a></span>
+            <span class="demon-creator">by Insxne97</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbF" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image7.jpg');">
+            <span class="demon-rank">#7</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/7">Anathema</a></span>
+            <span class="demon-creator">by nikroplays</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbG" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image8.jpg');">
+            <span class="demon-rank">#8</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/8">Avernus</a></span>
+            <span class="demon-creator">by PockeWindfish</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbH" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image9.jpg');">
+            <span class="demon-rank">#9</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/9">Acheron</a></span>
+            <span class="demon-creator">by ryamu</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbI" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image10.jpg');">
+            <span class="demon-rank">#10</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/10">Silent Clubstep</a></span>
+            <span class="demon-creator">by TheRealSailent</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbJ" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image11.jpg');">
+            <span class="demon-rank">#11</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/11">Bloodbath</a></span>
+            <span class="demon-creator">by Riot</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbK" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image12.jpg');">
+            <span class="demon-rank">#12</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/12">Cataclysm</a></span>
+            <span class="demon-creator">by Ggb0y</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbL" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image13.jpg');">
+            <span class="demon-rank">#13</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/13">Yatagarasu</a></span>
+            <span class="demon-creator">by Krazyman</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbM" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image14.jpg');">
+            <span class="demon-rank">#14</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/14">Sonic Wave</a></span>
+            <span class="demon-creator">by Ggb0y</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbN" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image15.jpg');">
+            <span class="demon-rank">#15</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/15">Tartarus</a></span>
+            <span class="demon-creator">by Krazyman</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbO" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image16.jpg');">
+            <span class="demon-rank">#16</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/16">The Golden</a></span>
+            <span class="demon-creator">by TheRealSailent</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbP" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image17.jpg');">
+            <span class="demon-rank">#17</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/17">The Nightmare</a></span>
+            <span class="demon-creator">by Kiba</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbQ" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image18.jpg');">
+            <span class="demon-rank">#18</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/18">The Hell Factory</a></span>
+            <span class="demon-creator">by Insxne97</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbR" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image19.jpg');">
+            <span class="demon-rank">#19</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/19">The Last</a></span>
+            <span class="demon-creator">by Kiba</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbS" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image20.jpg');">
+            <span class="demon-rank">#20</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/20">The Final</a></span>
+            <span class="demon-creator">by TheRealSailent</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbT" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image21.jpg');">
+            <span class="demon-rank">#21</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/21">The Abyss</a></span>
+            <span class="demon-creator">by Kiba</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbU" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image22.jpg');">
+            <span class="demon-rank">#22</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/22">The Void</a></span>
+            <span class="demon-creator">by Insxne97</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbV" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image23.jpg');">
+            <span class="demon-rank">#23</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/23">The End</a></span>
+            <span class="demon-creator">by TheRealSailent</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbW" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image24.jpg');">
+            <span class="demon-rank">#24</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/24">The Beginning</a></span>
+            <span class="demon-creator">by Kiba</span>
+            <a class="demon-video" href="https://www.youtube.com/watch?v=4lfkzz1VCbX" target="_blank">Video</a>
+        </li>
+        <li class="demon-item" style="background-image: url('https://example.com/image25.jpg');">
+            <span class="demon-rank">#25</span>
+            <span class="demon-name"><a href="https://pointercrate.com/demonlist/25">The Journey</a></span>
+            <span class="demon-creator">by Insxne97</span>
+            <a class="demon-video" href
